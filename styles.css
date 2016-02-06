@@ -21,6 +21,19 @@ html {
 /* -------------------------------------- */
 
 
+/* NAVBAR */
+
+
+/* -------------------------------------- */
+
+.nav-wrapper {
+  background-color: #0d47a1;
+}
+
+
+/* -------------------------------------- */
+
+
 /* HERO SECTION */
 
 
@@ -41,7 +54,7 @@ html {
 }
 
 .glass {
-  border: 3px solid white;
+  border: 2px solid #1e88e5;
   padding: 25px;
 }
 
@@ -60,14 +73,77 @@ html {
   font-size: 2em;
 }
 
+.hero-copy-stack {
+  background: #7f7f7f;
+  background: rgba(255, 255, 255, 0.75);
+  padding: 3px;
+  color: #1e88e5;
+  font-weight: 300;
+}
+
 .btn-resume {
   margin: 20px auto 0 auto;
   opacity: .65;
-  background-color: transparent
+  background-color: #0d47a1;
 }
 
 .btn-resume:hover {
   opacity: .9;
+  background-color: #1e88e5;
+}
+
+
+/* -------------------------------------- */
+
+
+/* SAYHELLO-MODAL-FORM-STYLES */
+
+
+/* -------------------------------------- */
+
+
+/* label color */
+
+.input-field label {
+  color: #1e88e5;
+}
+
+
+/* label focus color */
+
+.input-field input[type=text]:focus + label,
+.input-field input[type=email]:focus + label,
+.input-field textarea:focus + label {
+  color: #1e88e5 !important;
+}
+
+textarea.materialize-textarea {
+  margin-bottom: 0;
+}
+
+
+/* label underline focus color */
+
+.input-field input[type=text]:focus,
+.input-field input[type=text].valid,
+.input-field input[type=text].invalid,
+.input-field input[type=email]:focus,
+.input-field input[type=email].valid,
+.input-field input[type=email].invalid,
+.input-field textarea:focus,
+.input-field textarea.valid,
+.input-field textarea.invalid,
+.input-field textarea:focus {
+  border-bottom: 1px solid #1e88e5 !important;
+  ;
+  box-shadow: 0 1px 0 0 #1e88e5 !important;
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+  color: #1e88e5;
 }
 
 

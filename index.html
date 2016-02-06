@@ -5,9 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jared Hensley | Web Developer</title>
-  <link rel="stylesheet" href="styles.css">
   <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.css" media="screen,projection" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -50,6 +50,43 @@
   </nav>
   <!--end nav-content-->
 
+  <!--modal-sayhello-trigger->
+  
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <div class="row">
+        <form class="col s12 sayhelloform">
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="first_name" type="text" class="validate">
+              <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+              <input id="last_name" type="text" class="validate">
+              <label for="last_name">Last Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="email" type="email" class="validate">
+              <label for="email">Email</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Textarea</label>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Send!</a>
+    </div>
+  </div>
+
 
   <!--parallax content-->
   <section class="parallax-container valign-wrapper">
@@ -59,20 +96,21 @@
     </div>
     <div class="container glass">
       <h5 class="valign center-align hero-text hero-copy-lead">Full-Stack Javascript Developer</h5>
-      <h5 class="valign center-align hero-text hero-copy-sub">MEAN Stack Evangelist</h5>
+      <h5 class="valign center-align hero-text hero-copy-sub"><span class="hero-copy-stack">MEAN</span> Stack Evangelist</h5>
       <div class="valign center">
-        <button href="www.google.com" class="valign center-align btn-large btn-resume"><i class="material-icons right">message</i>Say Hello</button>
+        <button href="www.google.com" class="valign center-align btn btn-large btn-resume"><i class="material-icons right">message</i>Say Hello</button>
       </div>
     </div>
 
   </section>
 
+  <!--next section-->
   <div class="section white">
     <div class="row container">
       <h2 class="header">Parallax</h2>
       <p class="grey-text text-darken-3 lighten-3">LOL Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
     </div>
-  </div>-->
+  </div>
 
   <div class="intro deep-orange lighten-2 z-depth-1">
     <h1 class="grey-text text-lighten-5">Jared Hensley</h1>
