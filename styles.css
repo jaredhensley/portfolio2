@@ -1,9 +1,86 @@
-HTML CSS Result Edit on body,
+/* -------------------------------------- */
+
+
+/* BASIC SETUP */
+
+
+/* -------------------------------------- */
+
 html {
   background-color: #EDEDED !important;
+  box-sizing: border-box;
 }
 
-.intro {
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+
+/* -------------------------------------- */
+
+
+/* HERO SECTION */
+
+
+/* -------------------------------------- */
+
+.parallax-container {
+  height: 400px;
+}
+
+.parallax {
+  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/dallassky.jpg');
+  background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/dallassky.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.glass {
+  border: 3px solid white;
+  padding: 25px;
+}
+
+.hero-text {
+  color: white;
+  font-size: 2.5em;
+  /*text-align center not working with helper class*/
+}
+
+.hero-copy-lead {
+  font-weight: 300;
+}
+
+.hero-copy-sub {
+  font-weight: 200;
+  font-size: 2em;
+}
+
+.btn-resume {
+  margin: 20px auto 0 auto;
+  opacity: .65;
+  background-color: transparent
+}
+
+.btn-resume:hover {
+  opacity: .9;
+}
+
+
+/* -------------------------------------- */
+
+
+/* RANDOM JUNK */
+
+
+/* -------------------------------------- */
+
+
+/*.intro {
   text-align: center;
   padding-top: 13%;
   padding-bottom: 13%;
@@ -22,11 +99,4 @@ html {
   color: #333333;
   display: inline-block;
   font-size: 1.2rem;
-}
-
-
-/*HERO-SECTION*/
-
-.parallax {
-  background-image: url('images/dallassky.jpg');
-}
+}*/
