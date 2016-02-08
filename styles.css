@@ -27,6 +27,8 @@ html {
 /* -------------------------------------- */
 
 .nav-wrapper {
+  letter-spacing: 0.5px;
+  font-weight: 300;
   background-color: #0d47a1;
 }
 
@@ -54,7 +56,7 @@ html {
 }
 
 .glass {
-  border: 2px solid #1e88e5;
+  border: 2px solid white;
   padding: 25px;
 }
 
