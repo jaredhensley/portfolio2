@@ -9,6 +9,8 @@
 html {
   background-color: #EDEDED !important;
   box-sizing: border-box;
+  color: #333;
+  background-color: white !important;
 }
 
 *,
@@ -29,7 +31,12 @@ html {
 .nav-wrapper {
   letter-spacing: 0.5px;
   font-weight: 300;
-  background-color: #0d47a1;
+  background-color: white;
+}
+
+nav a,
+nav ul a {
+  color: #333 !important;
 }
 
 
@@ -46,6 +53,7 @@ html {
 }
 
 .parallax {
+  background-color: white !important;
   background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/dallassky.jpg');
   background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/dallassky.jpg');
   background-repeat: no-repeat;
@@ -56,8 +64,9 @@ html {
 }
 
 .glass {
-  border: 2px solid white;
+  border: 1px solid #333;
   padding: 25px;
+  background-color: rgba(87, 189, 232, .6);
 }
 
 .hero-text {
@@ -77,21 +86,28 @@ html {
 
 .hero-copy-stack {
   background: #7f7f7f;
-  background: rgba(255, 255, 255, 0.75);
+  background: rgba(51, 51, 51, 0.5);
   padding: 3px;
   color: #1e88e5;
   font-weight: 300;
 }
 
+.hero-copy-stack-off {
+  color: white;
+}
+
 .btn-resume {
   margin: 20px auto 0 auto;
   opacity: .65;
-  background-color: #0d47a1;
+  background-color: white;
+  border: 1px solid #333;
+  color: #333;
 }
 
 .btn-resume:hover {
   opacity: .9;
-  background-color: #1e88e5;
+  background-color: #333;
+  color: white;
 }
 
 
@@ -146,6 +162,23 @@ textarea.materialize-textarea {
 
 .input-field .prefix.active {
   color: #1e88e5;
+}
+
+
+/*PROJECT SECTION*/
+
+section.projects {
+  background-color: #fff;
+}
+
+section.about {
+  background-color: #151515;
+  color: #fff;
+  font-size: 1.8em;
+  letter-spacing: 2px;
+  line-height: 40px;
+  margin-top: 6em;
+  margin-bottom: 4em;
 }
 
 
