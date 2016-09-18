@@ -1,16 +1,9 @@
-/* -------------------------------------- */
 
-
-/* BASIC SETUP */
-
-
-/* -------------------------------------- */
 
 html {
-  background-color: #EDEDED !important;
   box-sizing: border-box;
   color: #333;
-  background-color: white !important;
+  background-color: white;
 }
 
 *,
@@ -19,14 +12,6 @@ html {
   box-sizing: inherit;
 }
 
-
-/* -------------------------------------- */
-
-
-/* NAVBAR */
-
-
-/* -------------------------------------- */
 
 .nav-wrapper {
   letter-spacing: 0.5px;
@@ -39,22 +24,12 @@ nav ul a {
   color: #333 !important;
 }
 
-
-/* -------------------------------------- */
-
-
-/* HERO SECTION */
-
-
-/* -------------------------------------- */
-
 .parallax-container {
   height: 400px;
 }
 
 .parallax {
   background-color: white !important;
-  background-image: -webkit-linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/dallassky.jpg');
   background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/dallassky.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -72,7 +47,6 @@ nav ul a {
 .hero-text {
   color: white;
   font-size: 2.5em;
-  /*text-align center not working with helper class*/
 }
 
 .hero-copy-lead {
@@ -111,13 +85,7 @@ nav ul a {
 }
 
 
-/* -------------------------------------- */
 
-
-/* SAYHELLO-MODAL-FORM-STYLES */
-
-
-/* -------------------------------------- */
 
 
 /* label color */
@@ -174,40 +142,7 @@ section.projects {
 section.about {
   background-color: #151515;
   color: #fff;
-  font-size: 1.8em;
+  font-size: 1.4em;
   letter-spacing: 2px;
-  line-height: 40px;
-  margin-top: 6em;
-  margin-bottom: 4em;
 }
 
-
-/* -------------------------------------- */
-
-
-/* RANDOM JUNK */
-
-
-/* -------------------------------------- */
-
-
-/*.intro {
-  text-align: center;
-  padding-top: 13%;
-  padding-bottom: 13%;
-  margin-bottom: 50px;
-}
-
-.intro h1 {
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.intro h5 {
-  text-transform: uppercase;
-  background-color: #f5f5f5;
-  padding: 10px;
-  color: #333333;
-  display: inline-block;
-  font-size: 1.2rem;
-}*/
