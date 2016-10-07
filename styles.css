@@ -46,14 +46,6 @@ html {
   box-sizing: inherit;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-  height: 100%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .row {
   padding-top: 20px;
   margin-bottom: 20px;
@@ -178,13 +170,10 @@ div.nav ul li {
 .hero {
   background-color: white !important;
   background-image: url('images/keyboard.png');
-  /*   background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/keyboard.png');*/
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100%;
-  /*  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,10 +193,58 @@ div.nav ul li {
   font-size: 2.5em;
 }
 
-svg {
-  border: 1px solid green;
-  max-height: 100px;
-  ;
+.skill {
+  background-color: #555;
+  padding: 50px 0;
+}
+
+.skill h5 {
+  color: #83abba;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-family: Novecentosans-Normal;
+  font-size: 3em;
+  margin: 20px 0;
+}
+
+.skill .container .col {
+  text-align: center;
+}
+
+.skill .container img {
+  max-width: 100%;
+  margin: 25px 0;
+}
+
+.skill .container .row:nth-of-type(1) {
+  margin-bottom: 0;
+}
+
+.skill .container .row:nth-of-type(2) {}
+
+@media (max-width: 900px) {
+  .skill .container .row:nth-of-type(2) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .skill .container img {
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .skill .container img {
+    max-height: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .skill .container img {
+    max-height: 80px;
+  }
 }
 
 
