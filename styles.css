@@ -1,21 +1,25 @@
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
 @font-face {
   font-family: 'Muli-Italic';
-  src: url('/fonts/Muli-Italic.tff') format('ttf')
+  src: url('fonts/Muli-Italic.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Muli-Light';
-  src: url('/fonts/Muli-Light.tff') format('ttf')
+  src: url('fonts/Muli-Light.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Muli-Regular';
-  src: url('/fonts/Muli-Regular.tff') format('ttf')
+  src: url('fonts/Muli-Regular.ttf') format('truetype')
 }
 
 @font-face {
   font-family: 'Muli-LightItalic';
-  src: url('/fonts/Muli-LightItalic.tff') format('ttf')
+  src: url('fonts/Muli-LightItalic.ttf') format('truetype')
 }
 
 @font-face {
@@ -33,10 +37,15 @@
   src: url('fonts/Novecentosanswide-Light-webfont.woff2') format('woff2'), url('fonts/Novecentosanswide-Light-webfont.woff') format('woff')
 }
 
+
+/* ==========================================================================
+   Globals
+   ========================================================================== */
+
 html {
   box-sizing: border-box;
   color: #333;
-  background-color: white;
+  background-color: #ebebeb;
   height: 100%;
 }
 
@@ -50,6 +59,13 @@ html {
   padding-top: 20px;
   margin-bottom: 20px;
 }
+
+.container {}
+
+
+/* ==========================================================================
+   Navbar
+   ========================================================================== */
 
 div.nav {
   display: flex;
@@ -162,6 +178,11 @@ div.nav ul li {
   }
 }
 
+
+/* ==========================================================================
+   Hero
+   ========================================================================== */
+
 .hero-container {
   height: 400px;
   max-width: 100%;
@@ -188,75 +209,101 @@ div.nav ul li {
   text-align: center;
 }
 
-.hero-text {
-  color: white;
-  font-size: 2.5em;
+
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+section.about {
+  color: black;
+  font-size: 1.2em;
+  padding: 50px 0;
 }
 
-.skill {
+@media (max-width: 900px) {
+  section.about .valign-wrapper {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+section.about h1 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+section.about p {
+  font-family: 'Muli-Light';
+  break-inside: avoid;
+  letter-spacing: .5px;
+}
+
+section.about .img-wrapper {
+  text-align: center;
+}
+
+section.about img {
+  height: auto;
+  border-radius: 50%;
+  display: inline-block;
+  width: 100%;
+  max-width: 400px;
+}
+
+
+/* ==========================================================================
+   Skills
+   ========================================================================== */
+
+.skills {
   background-color: #555;
   padding: 50px 0;
 }
 
-.skill h5 {
+.skills .skills-title {
   color: #83abba;
   text-align: center;
   margin: 0 auto;
   text-transform: uppercase;
-  font-family: Novecentosans-Normal;
+  font-family: 'Novecentosans-Normal';
   font-size: 3em;
-  margin: 20px 0;
 }
 
-.skill .container .col {
+.skills .skills-container .skill-item-wrapper {
   text-align: center;
 }
 
-.skill .container img {
+.skills .skills-container .skill-item-wrapper img {
   max-width: 100%;
-  margin: 25px 0;
+  margin: 30px 0;
 }
 
-.skill .container .row:nth-of-type(1) {
+.skills .skills-container .skills-row:nth-of-type(1) {
   margin-bottom: 0;
 }
 
-.skill .container .row:nth-of-type(2) {}
+.skills .skills-container .skills-row:nth-of-type(2) {}
 
 @media (max-width: 900px) {
-  .skill .container .row:nth-of-type(2) {
+  .skills .skills-container .skills-row:nth-of-type(2) {
     margin-top: 0;
   }
 }
 
-@media (max-width: 1200px) {
-  .skill .container img {
-    max-height: 150px;
-  }
+.skills .skills-container img {
+  max-height: 100px;
 }
 
 @media (max-width: 900px) {
-  .skill .container img {
+  .skills .skills-container img {
     max-height: 100px;
   }
 }
 
 @media (max-width: 500px) {
-  .skill .container img {
+  .skills .skills-container img {
     max-height: 80px;
   }
-}
-
-
-/*PROJECT SECTION*/
-
-section.projects {
-  background-color: #fff;
-}
-
-section.about {
-  background-color: #151515;
-  color: #fff;
-  font-size: 1.4em;
-  letter-spacing: 2px;
 }
