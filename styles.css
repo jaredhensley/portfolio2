@@ -60,8 +60,6 @@ html {
   margin-bottom: 20px;
 }
 
-.container {}
-
 
 /* ==========================================================================
    Navbar
@@ -95,7 +93,7 @@ div.nav .nav-container .brandname {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3em;
+  font-size: 2.75em;
   text-transform: uppercase;
   letter-spacing: 4.5px;
 }
@@ -203,10 +201,11 @@ div.nav ul li {
 .hero-copy {
   color: white;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 3.5em;
   letter-spacing: 3px;
-  font-family: 'Novecentosans-Bold';
+  font-family: 'Novecentosans-Normal';
   text-align: center;
+  width: 100%;
 }
 
 
@@ -249,7 +248,12 @@ section.about img {
   border-radius: 50%;
   display: inline-block;
   width: 100%;
-  max-width: 400px;
+}
+
+@media (max-width: 1200px) {
+  section.about img {
+    max-width: 350px;
+  }
 }
 
 
@@ -265,7 +269,6 @@ section.about img {
 .skills .skills-title {
   color: #83abba;
   text-align: center;
-  margin: 0 auto;
   text-transform: uppercase;
   font-family: 'Novecentosans-Normal';
   font-size: 3em;
@@ -284,12 +287,8 @@ section.about img {
   margin-bottom: 0;
 }
 
-.skills .skills-container .skills-row:nth-of-type(2) {}
-
-@media (max-width: 900px) {
-  .skills .skills-container .skills-row:nth-of-type(2) {
-    margin-top: 0;
-  }
+.skills .skills-container .skills-row:nth-of-type(2) {
+  padding-top: 0;
 }
 
 .skills .skills-container img {
@@ -306,4 +305,20 @@ section.about img {
   .skills .skills-container img {
     max-height: 80px;
   }
+}
+
+.projects {
+  padding: 50px 0;
+}
+
+.projects .row {}
+
+.projects h5 {
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: 'Novecentosans-Normal';
+}
+
+section.projects .row:nth-of-type(1) {
+  margin-bottom: 0;
 }
